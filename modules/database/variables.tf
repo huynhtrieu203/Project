@@ -15,7 +15,7 @@ variable "engine_version" {
 
 variable "db_password" {
   description = "RDS root user password"
-  default     = "Admin123"
+  default     = "root1234"
   sensitive   = true
 }
 
@@ -26,10 +26,10 @@ variable "instance_class" {
 
 variable "db_username" {
   description = "RDS root user password"
-  default     = "admin"
+  default     = "root"
 }
 
 variable "db_name" {
   type    = string
-  default = "db"
+  default = "mysql"
 }
